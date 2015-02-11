@@ -25,9 +25,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="scrapy_for_learn.py" />
+    <Compile Include="zhihu\zhihu\items.py" />
+    <Compile Include="zhihu\zhihu\pipelines.py" />
+    <Compile Include="zhihu\zhihu\settings.py" />
+    <Compile Include="zhihu\zhihu\spiders\zhihu_spyder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="zhihu\zhihu\spiders\__init__.py" />
+    <Compile Include="zhihu\zhihu\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="zhihu\" />
+    <Folder Include="zhihu\zhihu\" />
+    <Folder Include="zhihu\zhihu\spiders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="zhihu\scrapy.cfg" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
